@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusão de Conta - Aupair Brasil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F06179',
+                        secondary: '#4A9CE8',
+                        accent: '#30BFB2',
+                        error: '#E13D45',
+                        success: '#21A666',
+                        subtle: '#F5EBE1',
+                    },
+                    borderRadius: {
+                        'xl': '14px',
+                        '2xl': '20px',
+                        '3xl': '28px',
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 14px rgba(0, 0, 0, 0.08)',
+                        'soft-lg': '0 8px 24px rgba(0, 0, 0, 0.10)',
+                    }
+                }
+            }
+        }
+    </script>
+    <meta name="description" content="Como excluir sua conta do Aupair Brasil">
+</head>
+<body class="bg-gradient-to-br from-primary/10 to-secondary/10 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-soft">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <a href="index.html" class="text-2xl font-bold text-primary">Aupair Brasil</a>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition">Início</a>
+                    <a href="support.html" class="text-gray-700 hover:text-primary transition">Suporte</a>
+                    <a href="privacy.html" class="text-gray-700 hover:text-primary transition">Privacidade</a>
+                    <a href="terms.html" class="text-gray-700 hover:text-primary transition">Termos</a>
+                    <a href="community-guidelines.html" class="text-gray-700 hover:text-primary transition">Diretrizes</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-primary">Início</a>
+                <a href="support.html" class="block py-2 text-gray-700 hover:text-primary">Suporte</a>
+                <a href="privacy.html" class="block py-2 text-gray-700 hover:text-primary">Privacidade</a>
+                <a href="terms.html" class="block py-2 text-gray-700 hover:text-primary">Termos</a>
+                <a href="community-guidelines.html" class="block py-2 text-gray-700 hover:text-primary">Diretrizes</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-4xl mx-auto px-4 py-12">
+        <div class="bg-white rounded-3xl shadow-soft-lg p-8 md:p-12 border border-gray-100">
+            <!-- Hero Icon -->
+            <div class="text-center mb-8">
+                <div class="w-16 h-16 bg-error rounded-full flex items-center justify-center mx-auto mb-4 shadow-soft">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                    </svg>
+                </div>
+                <h1 class="text-4xl font-bold text-gray-800 mb-2">Exclusão de Conta</h1>
+                <p class="text-gray-600">Como excluir permanentemente sua conta do Aupair Brasil</p>
+            </div>
+
+            <div class="prose max-w-none">
+                <!-- Warning Box -->
+                <div class="bg-error/10 border-l-4 border-error p-6 rounded-2xl mb-8">
+                    <div class="flex">
+                        <svg class="w-6 h-6 text-error mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                        </svg>
+                        <div>
+                            <p class="font-bold text-error mb-2">Atenção: Esta ação é permanente e irreversível!</p>
+                            <p class="text-gray-700">Uma vez que você exclui sua conta, todos os seus dados serão permanentemente removidos e não poderão ser recuperados. Por favor, tenha certeza antes de prosseguir.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- How to Delete -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Como Excluir Sua Conta</h2>
+                    <p class="text-gray-700 mb-4">Você pode excluir sua conta diretamente pelo app em apenas alguns passos:</p>
+
+                    <div class="bg-gray-50 rounded-2xl p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Passo a Passo</h3>
+                        <ol class="space-y-4">
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mr-3">1</span>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Abra o app Aupair Brasil</p>
+                                    <p class="text-gray-600 text-sm">Faça login na sua conta se ainda não estiver logada</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mr-3">2</span>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Vá para Configurações</p>
+                                    <p class="text-gray-600 text-sm">Toque no ícone de perfil (canto inferior direito) e depois em "Configurações"</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mr-3">3</span>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Selecione "Conta"</p>
+                                    <p class="text-gray-600 text-sm">Role para baixo até a seção "Conta"</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mr-3">4</span>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Toque em "Excluir Conta"</p>
+                                    <p class="text-gray-600 text-sm">Esta opção está localizada na parte inferior da tela de Conta</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 w-10 h-10 bg-error text-white rounded-full flex items-center justify-center font-bold mr-3">5</span>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Confirme digitando "EXCLUIR"</p>
+                                    <p class="text-gray-600 text-sm">Para confirmar, você precisará digitar a palavra <strong>EXCLUIR</strong> (em maiúsculas) no campo de confirmação e tocar em "Confirmar Exclusão"</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="bg-secondary/10 border-l-4 border-secondary p-4 rounded-2xl">
+                        <p class="text-gray-800 font-semibold mb-2">Dica</p>
+                        <p class="text-gray-700">Se você está considerando excluir sua conta por causa de um problema temporário (como assédio ou conteúdo indesejado), considere primeiro <strong>bloquear usuários</strong> ou <strong>ajustar suas configurações de privacidade</strong>. Entre em contato com nosso <a href="support.html" class="text-primary hover:underline font-medium">suporte</a> se precisar de ajuda.</p>
+                    </div>
+                </section>
+
+                <!-- What Gets Deleted -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">O Que Será Excluído</h2>
+                    <p class="text-gray-700 mb-4">Quando você exclui sua conta, as seguintes informações são <strong>permanentemente removidas</strong>:</p>
+
+                    <div class="grid md:grid-cols-2 gap-4 mb-4">
+                        <div class="bg-error/5 p-4 rounded-2xl border border-error/20">
+                            <h3 class="font-semibold text-error mb-2 flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                                Dados Pessoais
+                            </h3>
+                            <ul class="list-disc list-inside text-gray-700 text-sm space-y-1 ml-4">
+                                <li>Email e credenciais de login</li>
+                                <li>Nome de usuário</li>
+                                <li>Foto de perfil e bio</li>
+                                <li>Informações de perfil (idade, localização, etc.)</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-error/5 p-4 rounded-2xl border border-error/20">
+                            <h3 class="font-semibold text-error mb-2 flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                                Conteúdo Criado
+                            </h3>
+                            <ul class="list-disc list-inside text-gray-700 text-sm space-y-1 ml-4">
+                                <li>Todos os seus posts</li>
+                                <li>Comentários e respostas</li>
+                                <li>Fotos e imagens enviadas</li>
+                                <li>Curtidas e reações</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-error/5 p-4 rounded-2xl border border-error/20">
+                            <h3 class="font-semibold text-error mb-2 flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                                Mensagens Privadas
+                            </h3>
+                            <ul class="list-disc list-inside text-gray-700 text-sm space-y-1 ml-4">
+                                <li>Conversas diretas (DMs)</li>
+                                <li>Histórico de mensagens</li>
+                                <li>Mídia compartilhada em chats</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-error/5 p-4 rounded-2xl border border-error/20">
+                            <h3 class="font-semibold text-error mb-2 flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                                Conexões Sociais
+                            </h3>
+                            <ul class="list-disc list-inside text-gray-700 text-sm space-y-1 ml-4">
+                                <li>Lista de seguidores e seguindo</li>
+                                <li>Usuários bloqueados</li>
+                                <li>Listas de amigos/favoritos</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-700 text-sm italic">
+                        <strong>Tempo de Processamento:</strong> A exclusão é processada imediatamente, mas pode levar até 30 dias para que todos os dados sejam completamente removidos de nossos backups e sistemas.
+                    </p>
+                </section>
+
+                <!-- What May Be Retained -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Informações que Podem Ser Retidas</h2>
+                    <p class="text-gray-700 mb-4">
+                        Por razões legais, de segurança e prevenção de fraude, algumas informações limitadas podem ser retidas de forma <strong>anonimizada</strong>:
+                    </p>
+
+                    <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-2xl mb-4">
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
+                            <li><strong>Registros de Moderação:</strong> Se sua conta foi suspensa ou recebeu reports, registros anonimizados podem ser mantidos para prevenir abuso futuro</li>
+                            <li><strong>Logs de Segurança:</strong> Logs técnicos de acesso e segurança podem ser retidos por até 90 dias para proteção do sistema</li>
+                            <li><strong>Dados Financeiros:</strong> Se você teve transações (futuramente), alguns registros financeiros podem ser retidos conforme exigido por lei (até 7 anos)</li>
+                            <li><strong>Obrigações Legais:</strong> Informações necessárias para cumprir com investigações legais, ordens judiciais ou processos legais</li>
+                        </ul>
+                    </div>
+
+                    <p class="text-gray-700 text-sm">
+                        <strong>Importante:</strong> Todos os dados retidos são dissociados de informações pessoais identificáveis e não podem ser usados para identificá-lo individualmente.
+                    </p>
+                </section>
+
+                <!-- Push Notifications -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Notificações Push</h2>
+                    <p class="text-gray-700 mb-3">
+                        Após excluir sua conta, você não receberá mais notificações push do Aupair Brasil. Seus tokens de notificação são automaticamente removidos dos nossos sistemas.
+                    </p>
+                    <p class="text-gray-700 text-sm">
+                        Se você reinstalar o app no futuro e criar uma nova conta, precisará autorizar notificações novamente.
+                    </p>
+                </section>
+
+                <!-- Alternatives -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Alternativas à Exclusão da Conta</h2>
+                    <p class="text-gray-700 mb-4">Antes de excluir permanentemente, considere estas opções:</p>
+
+                    <div class="space-y-3">
+                        <div class="bg-white border border-gray-200 rounded-2xl p-4 hover:border-primary/30 transition">
+                            <h3 class="font-semibold text-gray-800 mb-2">Tornar Seu Perfil Privado</h3>
+                            <p class="text-gray-700 text-sm">Nas configurações, você pode tornar seu perfil privado para que apenas usuários aprovados possam ver seu conteúdo.</p>
+                        </div>
+
+                        <div class="bg-white border border-gray-200 rounded-2xl p-4 hover:border-primary/30 transition">
+                            <h3 class="font-semibold text-gray-800 mb-2">Bloquear Usuários</h3>
+                            <p class="text-gray-700 text-sm">Se você está recebendo mensagens indesejadas, bloqueie os usuários específicos. Eles não poderão mais interagir com você.</p>
+                        </div>
+
+                        <div class="bg-white border border-gray-200 rounded-2xl p-4 hover:border-primary/30 transition">
+                            <h3 class="font-semibold text-gray-800 mb-2">Desativar Notificações</h3>
+                            <p class="text-gray-700 text-sm">Dê uma pausa desativando notificações nas configurações do iOS ou do app.</p>
+                        </div>
+
+                        <div class="bg-white border border-gray-200 rounded-2xl p-4 hover:border-primary/30 transition">
+                            <h3 class="font-semibold text-gray-800 mb-2">Fazer Logout</h3>
+                            <p class="text-gray-700 text-sm">Simplesmente faça logout do app. Sua conta permanecerá intacta e você pode voltar quando quiser.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Reactivation -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Posso Reativar Minha Conta Depois?</h2>
+                    <div class="bg-error/10 border-l-4 border-error p-4 rounded-2xl">
+                        <p class="text-gray-800 font-semibold mb-2">Não</p>
+                        <p class="text-gray-700 mb-3">
+                            A exclusão de conta é <strong>permanente e irreversível</strong>. Uma vez excluída, não há como recuperar sua conta, posts, mensagens ou qualquer outro dado.
+                        </p>
+                        <p class="text-gray-700">
+                            Se você quiser usar o Aupair Brasil novamente no futuro, precisará criar uma nova conta do zero com um novo email.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Need Help -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Precisa de Ajuda?</h2>
+                    <p class="text-gray-700 mb-4">
+                        Se você está tendo problemas com o app ou considerando excluir por um motivo específico, adoraríamos ajudar! Entre em contato conosco antes de tomar a decisão final:
+                    </p>
+                    <div class="bg-primary/10 border-l-4 border-primary p-4 rounded-2xl">
+                        <p class="text-gray-800 font-semibold mb-2">Entre em Contato</p>
+                        <p class="text-gray-700 mb-1">Email: <a href="mailto:support@aupairbrasil.com.br" class="text-primary hover:underline font-medium">support@aupairbrasil.com.br</a></p>
+                        <p class="text-gray-700 mb-1">Suporte: <a href="support.html" class="text-primary hover:underline font-medium">aupairbrasil.com.br/support</a></p>
+                        <p class="text-gray-700 text-sm mt-2">Respondemos em até 48 horas úteis</p>
+                    </div>
+                </section>
+
+                <!-- Privacy Policy -->
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Mais Informações</h2>
+                    <p class="text-gray-700 mb-3">
+                        Para mais detalhes sobre como tratamos seus dados, consulte nossa <a href="privacy.html" class="text-primary hover:underline font-medium">Política de Privacidade</a>.
+                    </p>
+                    <p class="text-gray-700">
+                        Se tiver dúvidas sobre o processo de exclusão ou privacidade de dados, não hesite em nos contatar.
+                    </p>
+                </section>
+
+                <!-- Additional Links -->
+                <div class="border-t border-gray-200 pt-6 mt-8">
+                    <h3 class="font-semibold text-gray-800 mb-3">Links Relacionados</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="privacy.html" class="text-primary hover:underline">Política de Privacidade</a>
+                        <span class="text-gray-400">•</span>
+                        <a href="terms.html" class="text-primary hover:underline">Termos de Uso</a>
+                        <span class="text-gray-400">•</span>
+                        <a href="community-guidelines.html" class="text-primary hover:underline">Diretrizes da Comunidade</a>
+                        <span class="text-gray-400">•</span>
+                        <a href="support.html" class="text-primary hover:underline">Suporte</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-16 border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 py-8">
+            <div class="text-center text-gray-600">
+                <p class="mb-2">&copy; 2025 Aupair Brasil. Todos os direitos reservados.</p>
+                <div class="flex justify-center space-x-4 text-sm">
+                    <a href="privacy.html" class="hover:text-primary transition">Privacidade</a>
+                    <span>•</span>
+                    <a href="terms.html" class="hover:text-primary transition">Termos</a>
+                    <span>•</span>
+                    <a href="support.html" class="hover:text-primary transition">Suporte</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

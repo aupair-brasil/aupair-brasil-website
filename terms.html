@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Uso - Aupair Brasil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F06179',
+                        secondary: '#4A9CE8',
+                        accent: '#30BFB2',
+                        error: '#E13D45',
+                        success: '#21A666',
+                        subtle: '#F5EBE1',
+                    },
+                    borderRadius: {
+                        'xl': '14px',
+                        '2xl': '20px',
+                        '3xl': '28px',
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 14px rgba(0, 0, 0, 0.08)',
+                        'soft-lg': '0 8px 24px rgba(0, 0, 0, 0.10)',
+                    }
+                }
+            }
+        }
+    </script>
+    <meta name="description" content="Termos de Uso do Aupair Brasil">
+</head>
+<body class="bg-gradient-to-br from-primary/10 to-secondary/10 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-soft">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <a href="index.html" class="text-2xl font-bold text-primary">Aupair Brasil</a>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition">Início</a>
+                    <a href="support.html" class="text-gray-700 hover:text-primary transition">Suporte</a>
+                    <a href="privacy.html" class="text-gray-700 hover:text-primary transition">Privacidade</a>
+                    <a href="terms.html" class="text-primary font-semibold">Termos</a>
+                    <a href="community-guidelines.html" class="text-gray-700 hover:text-primary transition">Diretrizes</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-primary">Início</a>
+                <a href="support.html" class="block py-2 text-gray-700 hover:text-primary">Suporte</a>
+                <a href="privacy.html" class="block py-2 text-gray-700 hover:text-primary">Privacidade</a>
+                <a href="terms.html" class="block py-2 text-primary font-semibold">Termos</a>
+                <a href="community-guidelines.html" class="block py-2 text-gray-700 hover:text-primary">Diretrizes</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-4xl mx-auto px-4 py-12">
+        <div class="bg-white rounded-3xl shadow-soft-lg p-8 md:p-12 border border-gray-100">
+            <!-- Hero Icon -->
+            <div class="text-center mb-8">
+                <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4 shadow-soft">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                </div>
+                <h1 class="text-4xl font-bold text-gray-800 mb-2">Termos de Uso</h1>
+                <p class="text-gray-600">Última atualização: 18 de fevereiro de 2026</p>
+            </div>
+
+            <div class="prose max-w-none">
+                <!-- Introduction -->
+                <section class="mb-8">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Bem-vindo ao <strong>Aupair Brasil</strong>. Estes Termos regem seu acesso e uso do nosso aplicativo móvel e serviços relacionados (o "Serviço").
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Ao criar uma conta ou usar o app, você concorda com estes Termos, com a <a href="privacy.html" class="text-primary hover:underline font-medium">Política de Privacidade</a> e com as <a href="community-guidelines.html" class="text-primary hover:underline font-medium">Diretrizes da Comunidade</a>.
+                    </p>
+                </section>
+
+                <!-- Section 1: Acceptance -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">1. Aceitação dos Termos</h2>
+                    <p class="text-gray-700">
+                        Se você não concorda com qualquer parte destes Termos, não use o Serviço.
+                    </p>
+                </section>
+
+                <!-- Section 2: Eligibility -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">2. Elegibilidade e Público-Alvo</h2>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
+                        <li>Você deve ter pelo menos <strong>18 anos</strong></li>
+                        <li>O app é destinado a <strong>current au pairs</strong>, <strong>former au pairs</strong> e pessoas com interesse real em ser au pair</li>
+                        <li><strong>Famílias e agências não podem participar</strong></li>
+                        <li>Não ter sido previamente banido ou suspenso do Serviço</li>
+                    </ul>
+                </section>
+
+                <!-- Section 3: Account -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">3. Sua Conta</h2>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4 ml-4">
+                        <li>Forneça informações precisas e atualizadas</li>
+                        <li>Você é responsável pela segurança da sua conta</li>
+                        <li>Uma conta por pessoa; contas duplicadas podem ser removidas</li>
+                        <li>Não venda, compartilhe ou transfira sua conta</li>
+                    </ul>
+                </section>
+
+                <!-- Section 4: User Content -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">4. Conteúdo do Usuário</h2>
+                    <p class="text-gray-700 mb-4">
+                        Você mantém a propriedade do conteúdo que publica (posts, comentários, mensagens e fotos). Ao publicar, você nos concede licença para armazenar, exibir e distribuir esse conteúdo para operar o Serviço.
+                    </p>
+                    <p class="text-gray-700">
+                        Você declara que possui os direitos necessários para todo o conteúdo publicado e que esse conteúdo não viola direitos de terceiros.
+                    </p>
+                </section>
+
+                <!-- Section 5: Conduct -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">5. Conduta Proibida</h2>
+                    <p class="text-gray-700 mb-3">As regras de conduta se aplicam a <strong>todas as formas de interação no app</strong>, incluindo posts, comentários, mensagens privadas e convites. É proibido:</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
+                        <li>Assédio, ameaças, discurso de ódio, violência ou discriminação</li>
+                        <li>Conteúdo sexual explícito, ilegal ou que viole direitos de terceiros</li>
+                        <li>Spam, golpes, fraude ou solicitação enganosa de dinheiro</li>
+                        <li>Personificação, uso de informações falsas ou enganosas</li>
+                        <li>Coletar dados de outros usuários sem consentimento</li>
+                        <li>Usar bots, scripts ou automações para acessar o app</li>
+                    </ul>
+                </section>
+
+                <!-- Section 6: Secret Feed -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">6. Feed Secreto e Convites</h2>
+                    <p class="text-gray-700">
+                        O feed secreto é acessível apenas por convite. Você é responsável por compartilhar códigos apenas com pessoas de confiança. Podemos revogar o acesso a qualquer momento se houver violação destes Termos.
+                    </p>
+                </section>
+
+                <!-- Section 7: Moderation -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">7. Denúncias, Bloqueio e Moderação</h2>
+                    <p class="text-gray-700 mb-3">
+                        Você pode denunciar posts, comentários, mensagens e perfis. Podemos remover conteúdo, limitar recursos, suspender ou banir contas que violem os Termos e as Diretrizes.
+                    </p>
+                    <p class="text-gray-700 mb-3">
+                        Você pode <strong>bloquear outros usuários</strong> a qualquer momento. O bloqueio impede que o usuário bloqueado envie mensagens ou interaja com você. Você pode desbloquear um usuário a qualquer momento.
+                    </p>
+                    <p class="text-gray-700">
+                        Caso sua conta seja suspensa ou conteúdo removido, você pode entrar em contato com <a href="mailto:support@aupairbrasil.com.br" class="text-primary hover:underline font-medium">support@aupairbrasil.com.br</a> para solicitar revisão da decisão.
+                    </p>
+                </section>
+
+                <!-- Section 8: Podcasts -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">8. Podcasts</h2>
+                    <p class="text-gray-700">
+                        O conteúdo de podcasts é disponibilizado para uso pessoal no app. É proibido copiar, redistribuir ou explorar comercialmente qualquer episódio sem autorização.
+                    </p>
+                </section>
+
+                <!-- Section 9: Third-Party Services -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">9. Serviços de Terceiros e Publicidade</h2>
+                    <p class="text-gray-700">
+                        O app pode exibir anúncios nativos via Google AdMob e utilizar serviços de terceiros para infraestrutura. Não nos responsabilizamos pelas políticas de terceiros.
+                    </p>
+                </section>
+
+                <!-- Section 10: Disclaimers -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">10. Isenções de Responsabilidade</h2>
+                    <div class="bg-gray-100 border border-gray-300 rounded-2xl p-6 my-4">
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
+                            <li>Não garantimos que o Serviço será ininterrupto ou livre de erros</li>
+                            <li>Não verificamos a identidade de usuários</li>
+                            <li>Você é responsável por suas interações com outros usuários</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 11: Limitation of Liability -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">11. Limitação de Responsabilidade</h2>
+                    <p class="text-gray-700">
+                        Na máxima extensão permitida por lei, o Aupair Brasil não será responsável por danos indiretos ou consequenciais decorrentes do uso do Serviço.
+                    </p>
+                </section>
+
+                <!-- Section 12: Termination -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">12. Encerramento</h2>
+                    <p class="text-gray-700">
+                        Podemos suspender ou encerrar seu acesso se você violar estes Termos. Você pode excluir sua conta nas configurações do app.
+                    </p>
+                </section>
+
+                <!-- Section 13: Governing Law -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">13. Lei Aplicável e Jurisdição</h2>
+                    <p class="text-gray-700">
+                        Estes Termos são regidos pelas leis do Brasil. Qualquer disputa será resolvida nos tribunais brasileiros competentes.
+                    </p>
+                </section>
+
+                <!-- Section 14: Changes -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">14. Alterações</h2>
+                    <p class="text-gray-700">
+                        Podemos atualizar estes Termos periodicamente. O uso continuado do Serviço após mudanças constitui aceitação dos novos Termos.
+                    </p>
+                </section>
+
+                <!-- Section 15: Contact -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">15. Contato</h2>
+                    <div class="bg-secondary/10 border-l-4 border-secondary p-4 rounded-2xl">
+                        <p class="text-gray-800 font-semibold">Aupair Brasil</p>
+                        <p class="text-gray-700">Email: <a href="mailto:support@aupairbrasil.com.br" class="text-primary hover:underline font-medium">support@aupairbrasil.com.br</a></p>
+                        <p class="text-gray-700">Suporte: <a href="support.html" class="text-primary hover:underline font-medium">aupairbrasil.com.br/support</a></p>
+                    </div>
+                </section>
+
+                <!-- Additional Links -->
+                <div class="border-t border-gray-200 pt-6 mt-8">
+                    <h3 class="font-semibold text-gray-800 mb-3">Documentos Relacionados</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="privacy.html" class="text-primary hover:underline">Política de Privacidade</a>
+                        <span class="text-gray-400">•</span>
+                        <a href="community-guidelines.html" class="text-primary hover:underline">Diretrizes da Comunidade</a>
+                        <span class="text-gray-400">•</span>
+                        <a href="account-deletion.html" class="text-primary hover:underline">Exclusão de Conta</a>
+                        <span class="text-gray-400">•</span>
+                        <a href="support.html" class="text-primary hover:underline">Suporte</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-16 border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 py-8">
+            <div class="text-center text-gray-600">
+                <p class="mb-2">&copy; 2026 Aupair Brasil. Todos os direitos reservados.</p>
+                <div class="flex justify-center space-x-4 text-sm">
+                    <a href="privacy.html" class="hover:text-primary transition">Privacidade</a>
+                    <span>•</span>
+                    <a href="terms.html" class="hover:text-primary transition">Termos</a>
+                    <span>•</span>
+                    <a href="support.html" class="hover:text-primary transition">Suporte</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

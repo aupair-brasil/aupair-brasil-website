@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - Aupair Brasil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F06179',
+                        secondary: '#4A9CE8',
+                        accent: '#30BFB2',
+                        error: '#E13D45',
+                        success: '#21A666',
+                        subtle: '#F5EBE1',
+                    },
+                    borderRadius: {
+                        'xl': '14px',
+                        '2xl': '20px',
+                        '3xl': '28px',
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 14px rgba(0, 0, 0, 0.08)',
+                        'soft-lg': '0 8px 24px rgba(0, 0, 0, 0.10)',
+                    }
+                }
+            }
+        }
+    </script>
+    <meta name="description" content="Política de Privacidade do Aupair Brasil">
+</head>
+<body class="bg-gradient-to-br from-primary/10 to-secondary/10 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-soft">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <a href="index.html" class="text-2xl font-bold text-primary">Aupair Brasil</a>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition">Início</a>
+                    <a href="support.html" class="text-gray-700 hover:text-primary transition">Suporte</a>
+                    <a href="privacy.html" class="text-primary font-semibold">Privacidade</a>
+                    <a href="terms.html" class="text-gray-700 hover:text-primary transition">Termos</a>
+                    <a href="community-guidelines.html" class="text-gray-700 hover:text-primary transition">Diretrizes</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-primary">Início</a>
+                <a href="support.html" class="block py-2 text-gray-700 hover:text-primary">Suporte</a>
+                <a href="privacy.html" class="block py-2 text-primary font-semibold">Privacidade</a>
+                <a href="terms.html" class="block py-2 text-gray-700 hover:text-primary">Termos</a>
+                <a href="community-guidelines.html" class="block py-2 text-gray-700 hover:text-primary">Diretrizes</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-4xl mx-auto px-4 py-12">
+        <div class="bg-white rounded-3xl shadow-soft-lg p-8 md:p-12 border border-gray-100">
+            <!-- Hero Icon -->
+            <div class="text-center mb-8">
+                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 shadow-soft">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                    </svg>
+                </div>
+                <h1 class="text-4xl font-bold text-gray-800 mb-2">Política de Privacidade</h1>
+                <p class="text-gray-600">Última atualização: 18 de fevereiro de 2026</p>
+            </div>
+
+            <div class="prose max-w-none">
+                <!-- Introduction -->
+                <section class="mb-8">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Bem-vindo à Política de Privacidade do <strong>Aupair Brasil</strong>. Esta política explica quais informações coletamos, por que coletamos, como usamos e quais direitos você tem.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Ao usar o app Aupair Brasil, você concorda com esta Política de Privacidade.
+                    </p>
+                </section>
+
+                <!-- Section 1: Data We Collect -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">1. Informações que Coletamos</h2>
+
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">1.1 Informações que Você Fornece</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4 ml-4">
+                        <li><strong>Dados de Conta:</strong> email, senha (armazenada com hash), nome de usuário</li>
+                        <li><strong>Dados de Perfil:</strong> nome, sobrenome, foto, data de nascimento, gênero, nacionalidade, país de residência, CEP, tipo de estudante (current/former)</li>
+                        <li><strong>Conteúdo e Interações:</strong> posts, comentários, curtidas, seguidores/seguindo, mensagens, denúncias, bloqueios e convites/códigos</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">1.2 Informações Coletadas Automaticamente</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4 ml-4">
+                        <li><strong>Dados Técnicos:</strong> modelo do dispositivo, versão do iOS, idioma/locale, versão do app e build</li>
+                        <li><strong>Dados de Uso:</strong> eventos de navegação e uso do app (ex.: abrir telas, criar posts, curtir, comentar)</li>
+                        <li><strong>Tokens de Notificação Push:</strong> coletamos tokens de notificação push (device tokens) fornecidos pelo sistema operacional do seu dispositivo, juntamente com a plataforma (iOS) e versão do aplicativo, com o único propósito de enviar notificações de novas mensagens no chat. Esses tokens são desativados ao sair da conta e excluídos com a exclusão da conta.</li>
+                    </ul>
+                    <p class="text-gray-700 mb-4">
+                        Não coletamos localização em tempo real e não acessamos microfone.
+                    </p>
+
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">1.3 Publicidade</h3>
+                    <p class="text-gray-700 mb-4">
+                        Usamos <strong>Google AdMob</strong> para exibir anúncios nativos. Se você permitir o rastreamento no iOS, o AdMob pode acessar identificadores de publicidade (IDFA) e dados de interação com anúncios.
+                    </p>
+
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">1.4 Informações do Website</h3>
+                    <p class="text-gray-700 mb-4">
+                        Se você entrar em contato pelo site (ex.: formulário de suporte), podemos coletar dados como nome, email e a mensagem enviada.
+                    </p>
+                </section>
+
+                <!-- Section 2: How We Use Your Data -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">2. Como Usamos Suas Informações</h2>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
+                        <li><strong>Operar o App:</strong> autenticação, feed geral e feed secreto, chat, perfis e podcasts</li>
+                        <li><strong>Segurança e Moderação:</strong> prevenir abuso, spam e violações das diretrizes</li>
+                        <li><strong>Melhoria do Produto:</strong> métricas internas e análise de uso para melhorar recursos</li>
+                        <li><strong>Publicidade:</strong> exibir anúncios nativos com AdMob</li>
+                        <li><strong>Comunicações Essenciais:</strong> recuperação de senha e mensagens administrativas</li>
+                    </ul>
+                </section>
+
+                <!-- Section 3: Data Sharing -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">3. Compartilhamento de Informações</h2>
+
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">3.1 Com Outros Usuários</h3>
+                    <p class="text-gray-700 mb-4">
+                        Seu perfil público exibe nome de usuário, nome, foto, nacionalidade e tipo de estudante, além de posts e comentários públicos. Campos como data de nascimento, gênero, CEP e país de residência não aparecem no perfil público. Conteúdo do feed secreto é visível apenas para membros.
+                    </p>
+
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">3.2 Com Provedores de Serviço</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4 ml-4">
+                        <li><strong>Supabase:</strong> autenticação, banco de dados, storage de mídias e eventos de analytics</li>
+                        <li><strong>Google AdMob:</strong> entrega e mensuração de anúncios nativos</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">3.3 Requisitos Legais</h3>
+                    <p class="text-gray-700 mb-4">
+                        Podemos divulgar informações quando exigido por lei, ordem judicial ou para proteger a segurança dos usuários.
+                    </p>
+
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">3.4 Não Vendemos Seus Dados</h3>
+                    <p class="text-gray-700">
+                        Não vendemos, alugamos ou comercializamos suas informações pessoais.
+                    </p>
+                </section>
+
+                <!-- Section 4: Data Retention -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">4. Retenção e Exclusão de Dados</h2>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4 ml-4">
+                        <li><strong>Conta Ativa:</strong> mantemos seus dados enquanto sua conta estiver ativa</li>
+                        <li><strong>Exclusão de Conta:</strong> você pode excluir sua conta nas configurações do app; removemos seus dados da base principal imediatamente</li>
+                        <li><strong>Mensagens de Chat:</strong> mensagens de chat são armazenadas de forma segura e criptografada em trânsito. Ao excluir uma mensagem "para mim", ela é ocultada apenas para você. Ao excluir "para ambos", o conteúdo é substituído por uma indicação de mensagem removida. Ao excluir sua conta, todas as suas mensagens e conversas são permanentemente removidas</li>
+                        <li><strong>Registros de Segurança:</strong> denúncias e ações de moderação podem ser retidas pelo tempo necessário para segurança e obrigações legais</li>
+                        <li><strong>Backups:</strong> cópias de segurança podem persistir por um período limitado</li>
+                    </ul>
+                </section>
+
+                <!-- Section 5: Children's Privacy -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">5. Privacidade de Menores</h2>
+                    <p class="text-gray-700 mb-3">
+                        O Aupair Brasil é destinado a usuários com <strong>18 anos ou mais</strong>. Não coletamos intencionalmente informações de menores de 18 anos.
+                    </p>
+                </section>
+
+                <!-- Section 6: Your Rights -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">6. Seus Direitos</h2>
+                    <p class="text-gray-700 mb-3">Você pode solicitar:</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4 ml-4">
+                        <li><strong>Acesso e Correção</strong> dos seus dados</li>
+                        <li><strong>Exclusão</strong> da sua conta e informações pessoais</li>
+                        <li><strong>Portabilidade</strong> quando aplicável</li>
+                        <li><strong>Revogação de Consentimento</strong> para comunicações não essenciais</li>
+                    </ul>
+                    <p class="text-gray-700">Para exercer esses direitos, contate: <a href="mailto:support@aupairbrasil.com.br" class="text-primary hover:underline font-medium">support@aupairbrasil.com.br</a>.</p>
+                </section>
+
+                <!-- Section 7: Advertising -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">7. Publicidade e Rastreamento</h2>
+                    <p class="text-gray-700 mb-3">
+                        Utilizamos Google AdMob para anúncios nativos. O iOS pode solicitar permissão de rastreamento (ATT) para personalização de anúncios.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
+                        <li>Vá em <strong>Ajustes → Privacidade → Rastreamento</strong></li>
+                        <li>Desative “Permitir que Apps Solicitem Rastreamento”</li>
+                    </ul>
+                </section>
+
+                <!-- Section 8: Security -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">8. Segurança</h2>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
+                        <li>Criptografia em trânsito (HTTPS/TLS)</li>
+                        <li>Hashing seguro de senhas</li>
+                        <li>Controles de acesso via Supabase</li>
+                    </ul>
+                </section>
+
+                <!-- Section 9: International Transfers -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">9. Transferências Internacionais</h2>
+                    <p class="text-gray-700">
+                        Seus dados podem ser processados em servidores localizados fora do Brasil (ex.: Estados Unidos) pelos nossos provedores de serviço.
+                    </p>
+                </section>
+
+                <!-- Section 9.1: LGPD -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">9.1 Conformidade com a LGPD</h2>
+                    <p class="text-gray-700 mb-3">
+                        Este aplicativo está em conformidade com a <strong>Lei Geral de Proteção de Dados (LGPD — Lei 13.709/2018)</strong>. As bases legais para o tratamento dos seus dados são:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4 ml-4">
+                        <li><strong>Consentimento (Art. 7º, I):</strong> ao criar sua conta e aceitar esta Política, você consente com o tratamento dos seus dados conforme aqui descrito</li>
+                        <li><strong>Execução de contrato (Art. 7º, V):</strong> o tratamento de dados é necessário para a prestação do Serviço contratado</li>
+                        <li><strong>Legítimo interesse (Art. 7º, IX):</strong> para segurança, prevenção de fraude e melhoria do Serviço</li>
+                    </ul>
+                    <p class="text-gray-700">
+                        Você pode exercer seus direitos previstos na LGPD (acesso, correção, exclusão, portabilidade e revogação de consentimento) entrando em contato pelo email <a href="mailto:support@aupairbrasil.com.br" class="text-primary hover:underline font-medium">support@aupairbrasil.com.br</a>.
+                    </p>
+                </section>
+
+                <!-- Section 10: Changes to Policy -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">10. Alterações nesta Política</h2>
+                    <p class="text-gray-700">
+                        Podemos atualizar esta Política de Privacidade. Alterações relevantes serão comunicadas no app ou por email.
+                    </p>
+                </section>
+
+                <!-- Section 11: Contact -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">11. Contato</h2>
+                    <div class="bg-primary/10 border-l-4 border-primary p-4 rounded-2xl">
+                        <p class="text-gray-800 font-semibold">Aupair Brasil - Privacidade</p>
+                        <p class="text-gray-700">Email: <a href="mailto:support@aupairbrasil.com.br" class="text-primary hover:underline font-medium">support@aupairbrasil.com.br</a></p>
+                        <p class="text-gray-700">Página de Suporte: <a href="support.html" class="text-primary hover:underline font-medium">aupairbrasil.com.br/support</a></p>
+                    </div>
+                </section>
+
+                <!-- Additional Links -->
+                <div class="border-t border-gray-200 pt-6 mt-8">
+                    <h3 class="font-semibold text-gray-800 mb-3">Links Relacionados</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="terms.html" class="text-primary hover:underline">Termos de Uso</a>
+                        <span class="text-gray-400">•</span>
+                        <a href="community-guidelines.html" class="text-primary hover:underline">Diretrizes da Comunidade</a>
+                        <span class="text-gray-400">•</span>
+                        <a href="account-deletion.html" class="text-primary hover:underline">Exclusão de Conta</a>
+                        <span class="text-gray-400">•</span>
+                        <a href="support.html" class="text-primary hover:underline">Suporte</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-16 border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 py-8">
+            <div class="text-center text-gray-600">
+                <p class="mb-2">&copy; 2026 Aupair Brasil. Todos os direitos reservados.</p>
+                <div class="flex justify-center space-x-4 text-sm">
+                    <a href="privacy.html" class="hover:text-primary transition">Privacidade</a>
+                    <span>•</span>
+                    <a href="terms.html" class="hover:text-primary transition">Termos</a>
+                    <span>•</span>
+                    <a href="support.html" class="hover:text-primary transition">Suporte</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

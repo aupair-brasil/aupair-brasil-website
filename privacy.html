@@ -97,6 +97,64 @@
                     <h2 class="text-2xl font-bold text-gray-800 mb-4">1. Informações que Coletamos</h2>
 
                     <h3 class="text-xl font-semibold text-gray-800 mb-3">1.1 Informações que Você Fornece</h3>
+                    <div class="overflow-x-auto mb-4">
+    <table class="w-full text-sm text-gray-700 border border-gray-200 rounded-lg">
+        <thead class="bg-gray-50">
+            <tr>
+                <th class="text-left p-3 font-semibold">Campo</th>
+                <th class="text-left p-3 font-semibold">Obrigatório?</th>
+                <th class="text-left p-3 font-semibold">Finalidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="border-t border-gray-200">
+                <td class="p-3">E-mail</td>
+                <td class="p-3"><span class="text-red-600 font-semibold">Obrigatório</span></td>
+                <td class="p-3">Autenticação e comunicações essenciais</td>
+            </tr>
+            <tr class="border-t border-gray-200">
+                <td class="p-3">Senha</td>
+                <td class="p-3"><span class="text-red-600 font-semibold">Obrigatório</span></td>
+                <td class="p-3">Segurança da conta</td>
+            </tr>
+            <tr class="border-t border-gray-200">
+                <td class="p-3">Nome de usuário</td>
+                <td class="p-3"><span class="text-red-600 font-semibold">Obrigatório</span></td>
+                <td class="p-3">Identificação pública no app</td>
+            </tr>
+            <tr class="border-t border-gray-200">
+                <td class="p-3">Nome e sobrenome</td>
+                <td class="p-3"><span class="text-green-600 font-semibold">Opcional</span></td>
+                <td class="p-3">Exibição no perfil</td>
+            </tr>
+            <tr class="border-t border-gray-200">
+                <td class="p-3">Foto de perfil</td>
+                <td class="p-3"><span class="text-green-600 font-semibold">Opcional</span></td>
+                <td class="p-3">Identificação visual</td>
+            </tr>
+            <tr class="border-t border-gray-200">
+                <td class="p-3">Data de nascimento</td>
+                <td class="p-3"><span class="text-green-600 font-semibold">Opcional</span></td>
+                <td class="p-3">Verificação de elegibilidade (18+)</td>
+            </tr>
+            <tr class="border-t border-gray-200">
+                <td class="p-3">Gênero</td>
+                <td class="p-3"><span class="text-green-600 font-semibold">Opcional</span></td>
+                <td class="p-3">Personalização do perfil</td>
+            </tr>
+            <tr class="border-t border-gray-200">
+                <td class="p-3">Nacionalidade</td>
+                <td class="p-3"><span class="text-green-600 font-semibold">Opcional</span></td>
+                <td class="p-3">Personalização do perfil</td>
+            </tr>
+            <tr class="border-t border-gray-200">
+                <td class="p-3">País de residência / CEP</td>
+                <td class="p-3"><span class="text-green-600 font-semibold">Opcional</span></td>
+                <td class="p-3">Funcionalidades de localização</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
                     <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4 ml-4">
                         <li><strong>Dados de Conta:</strong> email, senha (armazenada com hash), nome de usuário</li>
                         <li><strong>Dados de Perfil:</strong> nome, sobrenome, foto, data de nascimento, gênero, nacionalidade, país de residência, CEP, tipo de estudante (current/former)</li>
@@ -113,9 +171,29 @@
                         Não coletamos localização em tempo real e não acessamos microfone.
                     </p>
 
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">1.3 Publicidade</h3>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">1.3 Publicidade e Medição de Conversões</h3>
                     <p class="text-gray-700 mb-4">
-                        Usamos <strong>Google AdMob</strong> para exibir anúncios nativos. Se você permitir o rastreamento no iOS, o AdMob pode acessar identificadores de publicidade (IDFA) e dados de interação com anúncios.
+                        Utilizamos o <strong>Google AdMob</strong> para exibir anúncios nativos no aplicativo.
+                        Se você permitir o rastreamento ao ser solicitado pelo iOS (App Tracking Transparency),
+                        o AdMob poderá acessar o identificador de publicidade do seu dispositivo (IDFA) para
+                        personalizar anúncios. Caso não permita, anúncios não personalizados continuam sendo exibidos.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Além disso, utilizamos o <strong>Apple SKAdNetwork</strong> para medição de conversões de
+                        campanhas publicitárias. Este sistema permite que redes parceiras de anúncios recebam
+                        <strong>dados agregados e não identificáveis</strong> sobre instalações do aplicativo
+                        atribuídas a anúncios — sem acesso a dados pessoais diretos ou histórico de navegação.
+                        As redes configuradas incluem Google AdMob, Meta Audience Network, Apple Search Ads
+                        e parceiros de atribuição padrão do mercado.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Você pode gerenciar permissões de rastreamento a qualquer momento em:
+                        <strong>Ajustes do iPhone → Privacidade e Segurança → Rastreamento → Aupair Brasil</strong>.
+                    </p>
+                    <p class="text-gray-700">
+                        Para detalhes sobre como o Google trata dados de publicidade, consulte a
+                        <a href="https://policies.google.com/privacy" class="text-primary hover:underline"
+                           target="_blank" rel="noopener">Política de Privacidade do Google</a>.
                     </p>
 
                     <h3 class="text-xl font-semibold text-gray-800 mb-3">1.4 Informações do Website</h3>
@@ -219,10 +297,48 @@
 
                 <!-- Section 9: International Transfers -->
                 <section class="mb-8">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4">9. Transferências Internacionais</h2>
-                    <p class="text-gray-700">
-                        Seus dados podem ser processados em servidores localizados fora do Brasil (ex.: Estados Unidos) pelos nossos provedores de serviço.
-                    </p>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">9. Transferências Internacionais de Dados</h2>
+<p class="text-gray-700 mb-4">
+    Para operar o Aupair Brasil, seus dados são processados por prestadores de serviço
+    localizados fora do Brasil, conforme detalhado abaixo (Art. 33 LGPD):
+</p>
+<div class="overflow-x-auto mb-6">
+    <table class="w-full text-sm text-gray-700 border border-gray-200 rounded-lg">
+        <thead class="bg-gray-50">
+            <tr>
+                <th class="text-left p-3 font-semibold">Prestador</th>
+                <th class="text-left p-3 font-semibold">País</th>
+                <th class="text-left p-3 font-semibold">Finalidade</th>
+                <th class="text-left p-3 font-semibold">Política</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="border-t border-gray-200">
+                <td class="p-3"><strong>Supabase</strong></td>
+                <td class="p-3">EUA (AWS us-east-1)</td>
+                <td class="p-3">Banco de dados, autenticação, armazenamento</td>
+                <td class="p-3"><a href="https://supabase.com/privacy" class="text-primary hover:underline" target="_blank" rel="noopener">Supabase Privacy</a></td>
+            </tr>
+            <tr class="border-t border-gray-200">
+                <td class="p-3"><strong>Apple (APNS)</strong></td>
+                <td class="p-3">EUA</td>
+                <td class="p-3">Entrega de notificações push</td>
+                <td class="p-3"><a href="https://www.apple.com/legal/privacy/br/" class="text-primary hover:underline" target="_blank" rel="noopener">Apple Privacy</a></td>
+            </tr>
+            <tr class="border-t border-gray-200">
+                <td class="p-3"><strong>Google AdMob</strong></td>
+                <td class="p-3">EUA</td>
+                <td class="p-3">Publicidade</td>
+                <td class="p-3"><a href="https://policies.google.com/privacy" class="text-primary hover:underline" target="_blank" rel="noopener">Google Privacy</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p class="text-gray-700">
+    Todos os dados são transmitidos com criptografia HTTPS/TLS 1.2 ou superior.
+    As transferências ocorrem com base no Art. 33, inciso II da LGPD
+    (necessidade de execução do contrato de que o titular é parte).
+</p>
                 </section>
 
                 <!-- Section 9.1: LGPD -->
@@ -251,13 +367,37 @@
 
                 <!-- Section 11: Contact -->
                 <section class="mb-8">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4">11. Contato</h2>
-                    <div class="bg-primary/10 border-l-4 border-primary p-4 rounded-2xl">
-                        <p class="text-gray-800 font-semibold">Aupair Brasil - Privacidade</p>
-                        <p class="text-gray-700">Email: <a href="mailto:support@aupairbrasil.com.br" class="text-primary hover:underline font-medium">support@aupairbrasil.com.br</a></p>
-                        <p class="text-gray-700">Página de Suporte: <a href="support.html" class="text-primary hover:underline font-medium">aupairbrasil.com.br/support</a></p>
-                    </div>
-                </section>
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">11. Contato e Responsável pelo Tratamento</h2>
+
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">11.1 Controlador de Dados (Art. 41 LGPD)</h3>
+    <p class="text-gray-700 mb-4">
+        O responsável pelo tratamento dos seus dados pessoais é:
+    </p>
+    <div class="bg-gray-50 rounded-lg p-4 mb-6">
+        <p class="text-gray-700 mb-1"><strong>Empresa:</strong> Aupair Brasil / Northwind Technologies LLC</p>
+        <p class="text-gray-700 mb-1"><strong>Responsável:</strong> Gabriel Frozi</p>
+        <p class="text-gray-700 mb-1"><strong>E-mail para questões de privacidade e LGPD:</strong>
+            <a href="mailto:privacidade@aupairbrasil.com.br" class="text-primary hover:underline font-medium">
+                privacidade@aupairbrasil.com.br
+            </a>
+        </p>
+        <p class="text-gray-700"><strong>Suporte geral:</strong>
+            <a href="mailto:support@aupairbrasil.com.br" class="text-primary hover:underline font-medium">
+                support@aupairbrasil.com.br
+            </a>
+        </p>
+    </div>
+
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">11.2 Como exercer seus direitos</h3>
+    <p class="text-gray-700 mb-4">
+        Para exercer qualquer direito previsto no Art. 18 da LGPD (acesso, correção, exclusão,
+        portabilidade, revogação de consentimento), envie um e-mail para
+        <a href="mailto:privacidade@aupairbrasil.com.br" class="text-primary hover:underline font-medium">
+            privacidade@aupairbrasil.com.br
+        </a>
+        com o assunto "Direitos LGPD – [seu pedido]". Respondemos em até 15 dias úteis.
+    </p>
+</section>
 
                 <!-- Additional Links -->
                 <div class="border-t border-gray-200 pt-6 mt-8">
